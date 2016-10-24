@@ -15,7 +15,7 @@ if ( ! function_exists('menuTree')){
                 else
                 {
                     echo '<li>';
-                    echo '<a href="#" data-href="'.$route.'/'.$key.'/body/'.($val).'" class="btn-load btn-ajax-page" data-target="#workspace" level="'.$deep.'"><i class="fa fa-'.(lang($key.'_icon')==''?'caret-right':lang($key.'_icon')).'"></i>'.(lang($route.ucfirst($key))==''?$key:lang($route.ucfirst($key))).'</a>';
+                    echo '<a href="'.$route.'/'.$key.'/body/'.($val).'" class="btn-load btn-ajax-page" data-target="#workspace" level="'.$deep.'"><i class="fa fa-'.(lang($key.'_icon')==''?'caret-right':lang($key.'_icon')).'"></i>'.(lang($route.ucfirst($key))==''?$key:lang($route.ucfirst($key))).'</a>';
                 }
                 if(is_array($val))
                 {
